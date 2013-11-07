@@ -1,0 +1,10 @@
+#! /bin/bash
+
+
+function test {
+ echo testing
+ echo $1
+}
+
+test one
+
