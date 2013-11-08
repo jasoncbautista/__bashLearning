@@ -15,7 +15,12 @@ COL_CYAN=$ESC_SEQ"36;01m"
 # http://wiki.bash-hackers.org/snipplets/add_color_to_your_scripts
 #
 
-echo -e "$COL_RED This is something in red, probably an error! $COL_RESET"
-echo "What "
-echo -e "$COL_GREEN This is something that probably went well =-)" 
-echo "Okay"
+
+
+
+function printError(){
+    echo -e "$COL_RED $1  $COL_RESET"
+}
+
+
+printError "Here goes an error"
