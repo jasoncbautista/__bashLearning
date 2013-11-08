@@ -14,7 +14,7 @@ function test {
 
 _files=(*)
 
-for file in ${_files[@]}; do
-    echo $file
+for file in "${_files[@]}"; do
+    echo "$file"
 done
 
